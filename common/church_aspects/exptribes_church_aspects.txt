@@ -1,0 +1,103 @@
+exptribes_haka_aspect = {
+	effect = { 
+		leader_land_shock = 1
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+exptribes_hau_aspect = {
+	effect = {
+		global_colonial_growth = 15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			num_of_colonies = 1
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+	}
+}
+
+exptribes_matakite_aspect = {
+	effect = {
+		advisor_cost = -0.10
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+exptribes_rotu_aspect = {
+	effect = { 
+		ship_durability = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			num_of_light_ship = 1
+		}
+	}
+}
+
+exptribes_tahunga_aspect = {
+	effect = { 
+		global_tax_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+exptribes_tamako_aspect = {
+	effect = { 
+		army_tradition = 0.5
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+exptribes_taumata_atua_aspect = {
+	effect = { 
+		production_efficiency = 0.1
+	}
+	ai_will_do = {
+		factor = 17
+		modifier = {
+			factor = 0.5
+			treasury = 500
+		}
+		modifier = {
+			factor = 0
+			treasury = 2500
+		}
+	}
+}
+
+exptribes_whakanoa_aspect = {
+	effect = {
+		development_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}

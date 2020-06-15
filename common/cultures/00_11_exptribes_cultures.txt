@@ -1,0 +1,120 @@
+################## Culture Group Changes ##############
+
+############## North American Cultures ################
+
+eastern_siouan = {
+	graphical_culture = northamericagfx
+
+	catawba = {
+		primary = XXW
+		dynasty_names = {
+			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk 
+			Saukenuk Thakiwakie
+		}
+		male_names = {
+			Teshuhimga Gradamnsa Caygaywachepeche Couchestawasta Mahsa Wanougpacha Hurate Wasabatougga Nekaghre 
+			Mekewatanega Nangawahaegea Kemanha Papuisea Harachabe Pahelagren Tawangahuh Honencache Nichumali 
+			Voithevoihe Voithechinga Tavoingare Osogahe Voichinodhe Voinache Voinonpache Qhihiramaki
+		}
+		female_names = {
+			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
+		}
+	}
+
+	chiwere = {
+		primary = FOX
+		dynasty_names = {
+			Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk Saukenuk Thakiwakie
+			Tama Osakis Etnataek Kickapougwoi Kithlipecanuk
+			"Jumping Fish" "Sun Fish" Bear Giger Lance Devil "Big Eagle"
+			Sturgeon Eagle "Blues Son" Plumbed "the Sioux" "Brave by Hazard"
+		}
+		male_names = {
+			"Keokuk Wapello" "Pierremaskin Muckkatwagout Namasosanamet" "Mackkatananamakee Pashchenene Wapasai" 
+			"Malasenokama Kechaswa" Catchacommu Waapaca Mataqua Paquampa Aquoqua Nemarqua Machenamau Pesotaka 
+			Mishecaqua Capontwa Mowhinin Omquo Wonakasa Nautakawa Makataimeshekia Wathohuck Choukeka Keesheswa 
+			Kenekuk Papiquan Pashepaho Lalyurva Hanshequarhiqua Outchequaka Quashquame Shamaga Weesaka 
+			Chekaqua Kataka Mecaitch Neshota Chagasort Pecama Namachewana Nanochaatasa Taimah Catchemackeseo
+			Keokuk Wapello Pierremaskin Muckkatwagout Namasosanamet Mackkatananamakee Pashchenene Wapasai
+			Malasenokama Kechaswa
+		}
+		female_names = {
+			Tasinasapewin Thasinamani Tasinahlahlawin Dohumme Chapa Chapawee Chumani Dowanhowee Ehawee Hantaywee Kimimela 
+			Macha Magaskawee Makawee Mika Ojinjintka Ptaysanwee Shappa Skah Wichahpi Winona Zitkala Zonta Mina Tahcawin 
+			Talutah Wachiwi Wasula Weayaya Wichapi
+		}
+	}
+}
+
+############### South American Cultures ############
+
+chonan = {
+	graphical_culture = northamericagfx
+
+	het = {
+		male_names = {
+			Ancamilla Nampai Coñoepán Nahueltripai Millarapue Millalelmo Lautaro Paillamachu Huenecura 
+			Aillavilu Catrileo Ñanco Melín Caupolicán Illangulién Pinolevi Purrán Mañil Quilapán 
+			Pelantaro
+		}
+		female_names = {
+			Suyai Yaima Collipal Curipan Cuyen Calfuray Cayfutray Ilchahueque Ipi Kuyen Lefitray Leflay Llanquipan 
+			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
+		}
+	}
+}
+
+arawakan_group = {
+
+	graphical_culture = northamericagfx
+
+	arawak = { #Taino
+		male_names = {
+			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
+		}
+		female_names = {
+			Hayá Isani Takuiba Twengga
+		}
+	}
+	maipurean = {
+		male_names = {
+			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
+		}
+		female_names = {
+			Hayá Isani Takuiba Twengga
+		}
+	}
+	guajiro = { #	Lokono / Northern Mainland Arawak
+		primary = ARW
+		male_names = {
+			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
+		}
+		female_names = {
+			Takuiba Twengga
+		}
+	}
+	dynasty_names = {
+		Eregu Heliya Nenege Waricha Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+	}
+}
+
+#move miskito culture from chibchan to otomanguean group
+otomanguean = {
+	graphical_culture = southamericagfx
+
+	miskito = {
+		dynasty_names = {
+			Miskito Chibchan
+		}
+		male_names = {
+			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca 
+			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
+			Tucuycuyche Usca Curiatao Villac Umu Yamqui Mayta Yupanqui Zambiza Zopahua Ninan
+		}
+		female_names = {
+			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
+		}
+	}
+}

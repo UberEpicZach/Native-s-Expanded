@@ -1,0 +1,334 @@
+gov_native_monarchy = {
+	rank = {
+		1 = CHIEFDOM
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male  ={
+		1 = GREATSUN
+		2 = GREATSUN
+		3 = GREATSUN
+	}
+	
+	ruler_female = {
+		1 = MOTHERSUN
+		2 = MOTHERSUN
+		3 = MOTHERSUN
+	}
+	
+	trigger = {
+		technology_group = north_american
+		government = tribal_kingdom
+	}
+}
+
+east_algonquin_council = {
+	rank = {
+		1 = TRIBE
+	}
+	
+	ruler_male  ={
+		1 = SACHEM
+	}
+	
+	ruler_female = {
+		1 = SQUAW_SACHEM
+	}
+	
+	trigger = {
+		culture_group = eastern_algonquian
+		government = native_council
+		is_protectorate = no
+		is_subject = no
+	}
+}
+
+cent_algonquin_council = {
+	rank = {
+		1 = TRIBE
+	}
+	
+	ruler_male  ={
+		1 = OGEMA
+	}
+	
+	ruler_female = {
+		1 = SQUAW_OGEMA
+	}
+	
+	trigger = {
+		culture_group = central_algonquian
+		government = native_council
+		is_protectorate = no
+		is_subject = no
+	}
+}
+
+subject_algonquin_council = {
+	rank = {
+		1 = TRIBE
+	}
+	
+	ruler_male  ={
+		1 = SAGAMORE
+	}
+	
+	ruler_female = {
+		1 = SQUAW_SAGAMORE
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = eastern_algonquian
+			culture_group = central_algonquian
+		}
+		government = native_council
+		OR = {
+			is_protectorate = yes
+			is_subject = yes
+		}
+	}
+}
+
+iroquois_council = {
+	rank = {
+		1 = TRIBE
+	}
+	
+	ruler_male  ={
+		1 = HOYANEH
+	}
+	
+	ruler_female = {
+		1 = IAKOIANE
+	}
+	
+	trigger = {
+		culture_group = iroquoian
+		NOT = { primary_culture = cherokee }
+		government = native_council
+	}
+}
+
+cherokee_council = {
+	rank = {
+		1 = TRIBE
+	}
+	
+	ruler_male  ={
+		1 = UKU
+	}
+	
+	ruler_female = {
+		1 = IAKOIANE
+	}
+	
+	trigger = {
+		primary_culture = cherokee
+		government = native_council
+	}
+}
+
+sioux_council = {
+	rank = {
+		1 = TRIBE
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male  ={
+		1 = ITANCAN
+		2 = ITANCAN
+		3 = ITANCAN
+	}
+	
+	ruler_female = {
+		1 = ITANCAN
+		2 = ITANCAN
+		3 = ITANCAN
+	}
+	
+	trigger = {
+		culture_group = siouan
+		government = native_council
+	}
+}
+
+muskogee_council = {
+	rank = {
+		1 = TRIBE
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male  ={
+		1 = MICCO
+		2 = MICCO
+		3 = MICCO
+	}
+	
+	ruler_female = {
+		1 = MICCO
+		2 = MICCO
+		3 = MICCO
+	}
+	
+	trigger = {
+		culture_group = muskogean
+		government = native_council
+		is_protectorate = no
+		is_subject = no
+	}
+}
+
+subject_muskogee_council = {
+	rank = {
+		1 = TRIBE
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male  ={
+		1 = MICALGI
+		2 = MICALGI
+		3 = MICALGI
+	}
+	
+	ruler_female = {
+		1 = MICALGI
+		2 = MICALGI
+		3 = MICALGI
+	}
+	
+	trigger = {
+		culture_group = muskogean
+		government = native_council
+		OR = {
+			is_protectorate = yes
+			is_subject = yes
+		}
+	}
+}
+
+caddo_council = {
+	rank = {
+		1 = TRIBE
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male  ={
+		1 = CADDI
+		2 = CADDI
+		3 = CADDI_AYO
+	}
+	
+	ruler_female = {
+		1 = XINESI
+		2 = XINESI
+		3 = CADDI_AYO
+	}
+	
+	trigger = {
+		culture_group = caddoan
+		government = native_council
+		is_protectorate = no
+		is_subject = no
+	}
+}
+
+subject_caddo_council = {
+	rank = {
+		1 = TRIBE
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male  ={
+		1 = CAHANA
+		2 = CAHANA
+		3 = CAHANA
+	}
+	
+	ruler_female = {
+		1 = CAHANA
+		2 = CAHANA
+		3 = CAHANA
+	}
+	
+	trigger = {
+		culture_group = caddoan
+		government = native_council
+		OR = {
+			is_protectorate = yes
+			is_subject = yes
+		}
+	}
+}
+
+arawak_council = {
+	rank = {
+		1 = CHIEFDOM
+		2 = TRIBAL_KINGDOM
+		3 = TRIBAL_EMPIRE
+	}
+	
+	ruler_male  ={
+		1 = CACIQUE
+		2 = CACIQUE
+		3 = CACIQUE
+	}
+	
+	ruler_female = {
+		1 = CACICA
+		2 = CACICA
+		3 = CACICA
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = calusan
+			culture_group = carribean
+		}
+		government = native_council
+	}
+}
+
+shoshone_council = {
+	rank = {
+		1 = TRIBE
+	}
+	
+	ruler_male  ={
+		1 = PARRIABO
+	}
+	
+	ruler_female = {
+		1 = PARRIABO
+	}
+	
+	trigger = {
+		primary_culture = shoshone
+		government = native_council
+	}
+}
+
+mapuche_council = {
+	rank = {
+		1 = TRIBE
+	}
+	
+	ruler_male  ={
+		1 = LONKO
+	}
+	
+	ruler_female = {
+		1 = LONKO
+	}
+	
+	trigger = {
+		primary_culture = mapuche
+		government = native_council
+	}
+}

@@ -1,0 +1,774 @@
+exptribes_alligator_totem =
+{
+	# (Military - Defensive)
+	leader_land_shock = 1
+	ae_impact = -0.05
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = muskogean
+			culture_group = calusan
+			culture_group = chitimachan
+			has_country_flag = exptribes_allow_alligator_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+
+exptribes_bear_totem =
+{
+	#(Economic - Income)
+	infantry_power = 0.1
+	stability_cost_modifier = -0.20
+	
+	allow = { 
+		religion = totemism
+		OR = {
+			culture_group = iroquoian
+			culture_group = muskogean
+			culture_group = plains_algonquian
+			primary_culture = chipewyan
+			primary_culture = athabascan
+			has_country_flag = exptribes_allow_bear_totem
+		}		
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}		
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}			
+	}	
+}
+
+exptribes_beaver_totem = 
+{ 
+	#(Military - Offensive) 
+	global_prov_trade_power_modifier = 0.10
+	advisor_cost = -0.10
+	
+	allow = { 
+		religion = totemism
+		OR = {
+			culture_group = plains_algonquian
+			culture_group = central_algonquian
+			primary_culture = athabascan
+			primary_culture = chipewyan
+			has_country_flag = exptribes_allow_beaver_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}	
+}
+
+exptribes_birdman_totem = 
+{
+	#(Diplomatic - Peace)
+	land_forcelimit_modifier = 0.10
+	prestige = 1
+	diplomatic_reputation = 1
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			government = tribal_kingdom
+			has_country_flag = exptribes_allow_birdman_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}			
+	}	
+}
+
+exptribes_blackbird_totem = 
+{
+	#(Diplomatic - Peace)
+	development_cost = -0.15
+	global_colonial_growth = 15
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = caddoan
+			culture_group = chitimachan
+			has_country_flag = exptribes_allow_blackbird_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}			
+	}	
+}
+
+exptribes_bluejay_totem = 
+{ 
+	#(Military - Offensive) 
+	idea_cost = -0.10
+	land_maintenance_modifier = -0.10
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = sahaptian
+			culture_group = penutian
+			culture_group = tsimshianic
+			culture_group = wakashan
+			primary_culture = haida
+			has_country_flag = exptribes_allow_bluejay_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}	
+}
+
+
+exptribes_buffalo_totem =
+{
+	#(Economic - Income)
+	production_efficiency = 0.1
+	cavalry_power = 0.15
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = plains_algonquian
+			culture_group = siouan
+			culture_group = caddoan
+			culture_group = tonkawan
+			culture_group = sahaptian
+			primary_culture = shoshone
+			primary_culture = kiowa
+			primary_culture = navajo
+			primary_culture = apache
+			primary_culture = ktunaxa
+			has_country_flag = exptribes_allow_buffalo_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}		
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}			
+	}	
+}
+
+exptribes_coyote_totem = 
+{
+	#(Economic - Savings)
+	leader_land_manuever = 1
+	spy_offence = 0.5
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			AND = {
+				culture_group = sonoran
+				NOT = { primary_culture = chumash }
+			}
+			culture_group = central_american
+			culture_group = caddoan
+			culture_group = tonkawan
+			primary_culture = apache
+			primary_culture = navajo
+			has_country_flag = exptribes_allow_coyote_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+exptribes_crow_totem = 
+{
+	#(Economic - Savings)
+	advisor_cost = -0.20
+	prestige_from_land = 1.0
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = eastern_siouan
+			culture_group = siouan
+			culture_group = sahaptian
+			culture_group = penutian
+			culture_group = hokan
+			culture_group = tsimshianic
+			culture_group = wakashan
+			primary_culture = chumash
+			primary_culture = haida
+			has_country_flag = exptribes_allow_crow_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+exptribes_deer_totem = 
+{
+	#(Economic - Savings)
+	production_efficiency = 0.1
+	global_unrest = -2
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = muskogean
+			culture_group = calusan
+			culture_group = chitimachan
+			culture_group = eastern_siouan
+			culture_group = central_american
+			culture_group = hokan
+			AND = {
+				culture_group = sonoran
+				NOT = { primary_culture = shoshone }
+				NOT = { primary_culture = kiowa }
+			}
+			has_country_flag = exptribes_allow_deer_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+exptribes_eagle_totem =
+{
+	# (Military - Defensive)
+	prestige = 1
+	land_forcelimit_modifier = 0.1
+	
+	allow = { 
+		religion = totemism
+		OR = {
+			culture_group = eastern_algonquian
+			culture_group = eastern_siouan
+			culture_group = siouan
+			has_country_flag = exptribes_allow_eagle_totem
+		}		
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+
+exptribes_fishercat_totem =
+{
+	#(Economic - Income)
+	colonist_placement_chance = 0.10
+	global_tax_modifier = 0.10
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = eastern_algonquian
+			has_country_flag = exptribes_allow_fishercat_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}		
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}			
+	}	
+}
+
+exptribes_frog_totem =
+{
+	# (Diplomatic - War)
+	development_cost = -0.15
+	global_unrest = -2
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = penutian
+			culture_group = tsimshianic
+			culture_group = wakashan
+			culture_group = hokan
+			primary_culture = chumash
+			primary_culture = haida
+			has_country_flag = exptribes_allow_frog_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+exptribes_hawk_totem =
+{
+	# (Diplomatic - War)
+	leader_land_fire = 1
+	global_regiment_recruit_speed = -0.10
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = plains_algonquian
+			culture_group = caddoan
+			culture_group = tonkawan
+			primary_culture = athabascan
+			primary_culture = chipewyan
+			has_country_flag = exptribes_allow_hawk_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+exptribes_panther_totem = 
+{ 
+	#(Military - Offensive) 
+	leader_land_manuever = 1
+	trade_efficiency = 0.10
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = muskogean
+			culture_group = calusan
+			culture_group = iroquoian
+			culture_group = chitimachan
+			has_country_flag = exptribes_allow_panther_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}	
+}
+
+exptribes_rabbit_totem = 
+{
+	#(Diplomatic - Peace)
+	idea_cost = -0.1
+	advisor_cost = -0.2
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = eastern_algonquian
+			culture_group = central_algonquian
+			has_country_flag = exptribes_allow_rabbit_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}			
+	}	
+}
+
+exptribes_roadrunner_totem = 
+{
+	#(Diplomatic - Peace)
+	global_unrest = -2
+	manpower_recovery_speed = 0.1
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = central_american
+			AND = {
+				culture_group = sonoran
+				NOT = { primary_culture = shoshone }
+				NOT = { primary_culture = kiowa }
+				NOT = { primary_culture = chumash }
+			}
+			primary_culture = apache
+			primary_culture = navajo
+			has_country_flag = exptribes_allow_roadrunner_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}			
+	}	
+}
+
+exptribes_spider_totem =
+{
+	#(Economic - Income)
+	development_cost = -0.15
+	idea_cost = -0.10
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = central_american
+			AND = {
+				culture_group = sonoran
+				NOT = { primary_culture = shoshone }
+				NOT = { primary_culture = kiowa }
+				NOT = { primary_culture = chumash }
+			}
+			primary_culture = apache
+			primary_culture = navajo
+			has_country_flag = exptribes_allow_spider_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}		
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}			
+	}	
+}
+
+exptribes_tree_totem = 
+{
+	#(Economic - Savings)
+	diplomatic_reputation = 2
+	global_autonomy = -0.05
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = iroquoian
+			has_country_flag = exptribes_allow_tree_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+exptribes_turtle_totem =
+{
+	# (Diplomatic - War)
+	global_tax_modifier = 0.10
+	global_unrest = -2
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = iroquoian
+			culture_group = central_algonquian
+			has_country_flag = exptribes_allow_turtle_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+exptribes_weefolk_totem = 
+{ 
+	#(Military - Offensive) 
+	leader_land_fire = 1
+	land_morale = 0.10
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			culture_group = sahaptian
+			culture_group = central_algonquian
+			culture_group = eastern_siouan
+			culture_group = calusan
+			primary_culture = athabascan
+			primary_culture = chipewyan
+			primary_culture = shoshone
+			primary_culture = kiowa
+			has_country_flag = exptribes_allow_weefolk_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}	
+}
+
+exptribes_whale_totem =
+{
+	# (Military - Defensive)
+	production_efficiency = 0.1
+	prestige_decay = -0.01
+	naval_maintenance_modifier = -0.10
+	
+	allow = { 
+		religion = totemism 
+		OR = {
+			AND = {
+				culture_group = penutian
+				NOT = { primary_culture = ktunaxa }
+			}
+			culture_group = tsimshianic
+			culture_group = wakashan
+			culture_group = hokan
+			primary_culture = chumash
+			primary_culture = haida
+			has_country_flag = exptribes_allow_whale_totem
+		}	
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+
+exptribes_wolf_totem =
+{
+	# (Diplomatic - War)
+	discipline = 0.05
+	global_trade_goods_size_modifier = 0.1
+	
+	allow = { 
+		religion = totemism
+		OR = {
+			culture_group = eastern_algonquian
+			culture_group = siouan
+			has_country_flag = exptribes_allow_wolf_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+exptribes_wolf2_totem =
+{
+	# (Diplomatic - War)
+	discipline = 0.05
+	global_trade_goods_size_modifier = 0.1
+	
+	allow = { 
+		religion = totemism
+		OR = {
+			culture_group = tonkawan
+			primary_culture = shoshone
+			primary_culture = kiowa
+			has_country_flag = exptribes_allow_wolf2_totem
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}

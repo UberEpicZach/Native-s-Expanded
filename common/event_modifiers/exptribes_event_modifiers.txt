@@ -1,0 +1,43 @@
+# Modifiers are set by the exptribes.1 event and removed by the on_westernized on action
+
+# Give North and South American Tribal governments -50% technology cost 
+# and a land maintenance boost to help them compete with Native Council Governments
+exptribes_northamerican_tech = {
+	technology_cost = -0.50
+	land_maintenance_modifier = -0.4
+}
+
+# Available to tribal governments through a decision
+exptribes_clan_migration = {
+	colonists = 1
+}
+
+exptribes_sedentary_people = {
+	migration_cooldown = 5.0
+}
+
+### Estuary Modifiers ###
+
+# Orinoco Delta: 2803
+orinoco_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+# Amapa: 747
+amazon_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+# Belem: 748
+tocantins_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+# Wadjuk: 1084
+swanriver_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}

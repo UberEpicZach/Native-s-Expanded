@@ -1,0 +1,39 @@
+on_startup = {
+	events = {
+		exptribes.1
+		expislanders.1
+	}
+}
+
+# country
+# root = winning country, from = loser country
+on_war_won = {
+	FROM = { country_event = { id = flavor_cri.6 } }
+	ROOT = { country_event = { id = exptribes.13 } }
+	FROM = { country_event = { id = exptribes.14 } }
+}
+
+on_bi_yearly_pulse_4 = {
+	events = {
+		exptribes.11
+		expislanders.2
+		expislanders.3
+	}
+}
+
+on_thri_yearly_pulse_4 = {
+	random_events = {
+		100 = exptribes.6
+		100 = exptribes.7
+		100 = exptribes.8
+		100 = exptribes.9
+		100 = exptribes.10
+		500 = 0
+	}
+}
+
+on_five_year_pulse_3 = {
+	events = {
+		exptribes.12
+	}
+}
