@@ -1,0 +1,46 @@
+#Country Name: Please see filename.
+
+graphical_culture = africangfx
+
+color = { 139  5  26 }
+
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+monarch_names = {
+	"Ngapo #0" = 10
+	"Mahinaarangi #0" = 10
+	"Hohepa #0" = 10
+	"Rua #0" = 10
+	"Ngoi #0" = 10
+	"Kohine #0" = 10
+	"Hirini #0" = 10
+}
+
+leader_names = {
+	Ngapo
+	Mahinaarangi
+	Hohepa
+	Rua
+	Ngoi
+	Kohine
+	Hirini
+}
+
+ship_names = {
+	Maori
+}
