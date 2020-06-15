@@ -1,0 +1,541 @@
+# Apache Ideas
+APA_ideas = {
+	start = {
+		war_exhaustion = -0.05
+		reinforce_speed = 0.15
+	}
+	bonus = {
+		leader_land_manuever = 1
+	}
+	trigger = {
+		tag = APA
+	}
+	free = yes
+	
+	apa_jicarilla = {
+		development_cost = -0.2 
+	}
+	apa_mescallero = {
+		land_attrition = -0.10
+	}
+	apa_pue_refugees = {
+		idea_cost = -0.15
+	}
+	apa_spa_ponies = {
+		cavalry_cost = -0.2
+	}
+	apa_female_emissaries = {
+		diplomatic_upkeep = 1
+		female_advisor_chance = 0.25
+	}
+	apa_war_bands = {
+		mercenary_cost = -0.10
+		army_tradition = 1
+	}
+	apa_trailofthedead = {
+		loot_amount = 0.10
+	}
+}
+
+# Blackfoot Ideas
+BLA_ideas = {
+	start = {
+		hostile_attrition = 1
+		global_autonomy = -0.1
+	}
+	bonus = {
+		free_leader_pool = 1
+	}
+	
+	trigger = {
+		tag = BLA
+	}
+	free = yes
+	
+	bla_dogdays = {
+		land_attrition = -0.10
+	}
+	bla_rockymnthouse = {
+		global_trade_power = 0.15
+	}
+	bla_bearknives = {
+		leader_land_shock = 1
+	}
+	bla_tradeguns = {
+		cavalry_power = 0.10
+	}
+	bla_allcomrades = {
+		army_tradition = 0.5
+	}
+	bla_nhclans = {
+		global_unrest = -2
+	}
+	bla_bigknives = {
+		trade_steering = 0.15
+	}
+}
+
+# Comanche Ideas
+COM_ideas = {
+	start = {
+		leader_land_shock = 1
+		global_unrest = -1
+	}
+	bonus = {
+		prestige_from_land = 0.25
+	}
+	
+	trigger = {
+		tag = COM
+	}
+	free = yes
+	
+	com_nermernuh = {
+		global_regiment_recruit_speed = -0.1
+	}
+	com_horse_culture = {
+		cavalry_power = 0.15
+	}
+	com_against_us = {
+		war_exhaustion = -0.02
+	}
+	com_nomads = {
+		hostile_attrition = 1
+	}
+	com_comancheria = {
+		cavalry_cost = -0.10
+	}
+	com_horsetrading = {
+		trade_efficiency = 0.1
+	}
+	com_comanchemoon = {
+		leader_land_manuever = 1
+	}
+}
+
+# Illinewek Ideas
+# ILL_ideas = {}
+
+# Lenape Ideas
+LEN_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.15
+		inflation_reduction = 0.1
+	}
+	bonus = {
+		reinforce_speed = 0.15
+	}
+	
+	trigger = {
+		tag = LEN
+	}
+	free = yes
+	
+	len_unalachtigo = {
+		global_tariffs = 0.10
+	}
+	len_bighouse = {
+		tolerance_heretic = 2
+	}
+	len_unamie = {
+		defensiveness = 0.10
+		fort_maintenance_modifier = -0.20
+	}
+	len_munsie = {
+		global_colonial_growth = 20
+	}
+	len_secret_names = {
+		land_morale = 0.10
+	}
+	len_peacemakers = {
+		global_autonomy = -0.10
+	}
+	len_sinquas = {
+		war_exhaustion = -0.02
+	}
+}
+
+# Calusa Ideas
+QQA_ideas = {
+	start = {
+		global_regiment_recruit_speed = -0.10
+		diplomatic_upkeep = 1
+	}
+	bonus = {
+		naval_maintenance_modifier = -0.20
+	}
+	
+	trigger = {
+		tag = QQA
+	}
+	free = yes
+	
+	qqa_fishing = {
+		production_efficiency = 0.1
+	}
+	qqa_tributary_plp = {
+		trade_efficiency = 0.1
+	}
+	qqa_exl_carribean = {
+		light_ship_cost = -0.15
+		light_ship_power = 0.15
+	}
+	qqa_sunkentreasure = {
+		global_tax_modifier = 0.1
+		global_sailors_modifier = 0.20
+	}
+	qqa_shellculture = {
+		development_cost = -0.2
+	}
+	qqa_keymarcocat = {
+		prestige_decay = -0.01
+	}
+	qqa_cubanmigration = {
+		core_creation = -0.20
+	}
+}
+
+# Seminole Ideas
+QQB_ideas = {
+
+	start = {
+		core_creation = -0.15
+		global_unrest = -1
+	}
+	bonus = {
+		culture_conversion_cost = -0.2
+	}
+	
+	trigger = {
+		tag = QQB
+	}
+	free = yes
+	
+	qqb_black_drink = {
+		land_morale = 0.1
+	}
+	qqb_painted_post = {
+		global_regiment_recruit_speed = -0.10
+	}
+	qqb_caribbean_trade = {
+		global_prov_trade_power_modifier = 0.1
+	}
+	qqb_black_seminole = {
+		num_accepted_cultures = 2
+	}
+	qqb_hidden_swamp = {
+		hostile_attrition = 2.0
+	}
+	qqb_religious_tolerance = {
+		no_religion_penalty = yes
+	}
+	qqb_eu_intermarraige = {
+		technology_cost = -0.1
+	}
+}
+
+# Sioux Ideas
+SIO_ideas = {
+	start = {
+		stability_cost_modifier = -0.1
+		land_forcelimit_modifier = 0.25
+	}
+	bonus = {
+		cavalry_cost = -0.2
+	}
+	trigger = {
+		tag = SIO
+	}
+	free = yes
+	
+	sio_woodland_tradition = {
+		production_efficiency = 0.1 
+	}
+	sio_westward_migration = { 
+		colonists = 1 
+	}
+	sio_winter_counts = {
+		prestige_decay = -0.01 
+	}
+	sio_disease_resistance = { 
+		global_colonial_growth = 20 
+	}
+	sio_eagle_headdress = { 
+		land_morale = 0.1 
+	}
+	sio_white_buffalo_woman = { 
+		global_unrest = -2 
+	}
+	sio_dog_soldiers = { 
+		cavalry_power = 0.1 
+	}
+}
+
+# Toltec Ideas
+T0L_ideas = {
+	start = {
+		production_efficiency = 0.10
+		global_autonomy = -0.1
+	}
+	bonus = { interest = -1 }
+	
+	trigger = {
+		tag = T0L
+	}
+	free = yes
+	
+	t0l_tula = {
+		build_cost = -0.1
+	}
+	t0l_reedthrone = {
+		legitimacy = 1
+	}
+	t0l_atlanteans = {
+		infantry_power = 0.10
+	}
+	t0l_quetzalcoatl = {
+		development_cost = -0.1
+	}
+	t0l_teopixquimeh = {
+		tolerance_own = 1
+		global_missionary_strength = 0.02
+	}
+	t0l_tezcatlipoca = {
+		leader_land_manuever = 1
+	}
+	t0l_anahuac = {
+		ae_impact = -0.15
+	}
+}
+
+# Cree Ideas
+ WCR_ideas = {
+	start = {
+		global_autonomy = -0.05
+		discipline = 0.1
+	}
+	bonus = {
+		trade_efficiency = 0.1
+	}
+	trigger = {
+		tag = WCR
+	}
+	free = yes
+
+	wrc_cree_medicine = {
+		prestige_decay = -0.01
+		global_missionary_strength = 0.01
+	}
+	wrc_woods_cree = {
+		infantry_power = 0.15
+	}
+	wrc_winter_camps = {
+		global_manpower_modifier = 0.10
+	}
+	wrc_jamesbay_cree = {
+		diplomatic_upkeep = 1
+	}
+	wrc_hudsonbay_co = {
+		leader_land_fire = 1
+		global_trade_power = 0.1
+	}
+	wrc_plains_cree = {
+		cavalry_power = 0.15
+	}
+	wrc_shining_island = {
+		idea_cost = -0.1
+	}
+}
+
+# Chichimeca Ideas
+WWQ_ideas = {
+	start = {
+		infantry_power = 0.15
+		leader_land_shock = 1
+	}
+	bonus = {
+		global_tax_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = WWQ
+	}
+	free = yes
+
+	wwq_coyolxauhqui = {
+		stability_cost_modifier = -0.1
+	}
+	wwq_toltec_conquerors = {
+		ae_impact = -0.15
+	}
+	wwq_mixcoatl = {
+		war_exhaustion = -0.02
+		leader_land_fire = 1
+	}
+	wwq_ancestors_ashes = {
+		global_unrest = -2
+	}
+	wwq_guamare_confederacy = {
+		num_accepted_cultures = 2
+	}
+	wwq_hunting_dogs = {
+		land_attrition = -0.1
+		land_morale = 0.1
+	}
+	wwq_craftsmen = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+# Arikara Ideas
+WWS_ideas = {
+	start = {
+		production_efficiency= 0.1
+		global_manpower_modifier = 0.10
+	}
+	bonus = {
+		trade_efficiency = 0.1
+	}
+	trigger = {
+		tag = WWS
+	}
+	free = yes
+	
+	wws_missouri_conquerors = { 
+		land_morale = 0.2 
+	}
+	wws_mother_corn = { 
+		global_trade_goods_size_modifier = 0.1 
+	}
+	wws_meandering_river = { 
+		colonists = 1 
+	}
+	wws_fortified_towns = { 
+		defensiveness = 0.10 
+		fort_maintenance_modifier = -0.20 
+	}
+	wws_black_mouths = {
+		global_unrest = -2 
+	}
+	wws_sacred_cedar = { 
+		prestige = 1 
+	}
+	wws_fur_trade = { 
+		global_own_trade_power = 0.2 
+	}
+}
+
+# Miskito Ideas
+X2F_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.15
+		years_of_nationalism = -5
+	}
+	bonus = {
+		army_tradition_decay = -0.01
+	}
+	
+	trigger = {
+		tag = X2F
+	}
+	free = yes
+	
+	x2f_tawira = {
+		global_institution_spread = 0.1
+	}
+	x2f_zambo = {
+		infantry_power = 0.15
+	}
+	x2f_slave_raids = {
+		global_own_trade_power = 0.1
+	}
+	x2f_bluefields = {
+		trade_efficiency = 0.15
+	}
+	x2f_jamaica = {
+		inflation_reduction = 0.1
+	}
+	x2f_resist_spanish = {
+		enemy_core_creation = 0.5
+	}
+	x2f_british_settlers = {
+		development_cost = -0.2
+	}
+}
+
+# Wabanaki Ideas
+XXN_ideas = {
+	start = {
+		leader_land_manuever = 1
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		prestige_decay = -0.01
+	}
+	
+	trigger = {
+		tag = XXN
+	}
+	free = yes
+	
+	xxn_gluskabe = {
+		discipline = 0.1
+	}
+	xxn_fishing_moon = {
+		production_efficiency = 0.1
+	}
+	xxn_storage_pits = {
+		land_attrition = -0.10
+	}
+	xxn_wampum = {
+		trade_efficiency = 0.15
+	}
+	xxn_powwow = {
+		manpower_recovery_speed = 0.1
+	}
+	xxn_jesuits = {
+		idea_cost = -0.1
+	}
+	xxn_father_rale = {
+		spy_offence = 0.2
+	}
+}
+
+# Mingo Ideas
+XXV_ideas = {
+	start = {
+		global_autonomy = -0.05
+		global_colonial_growth = 20
+	}
+	
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		tag = XXV
+	}
+	free = yes		# will be added at load
+	
+	xxv_settling_the_ohio = {
+		colonist = 1
+	}
+	xxv_western_door = {
+		global_manpower_modifier = 0.10
+	}
+	xxv_kainerekowa = {
+		war_exhaustion_cost = -0.15
+	}
+	xxv_blue_mingo = {
+		infantry_power = 0.1
+	}
+	xxv_mourning_wars = {
+		manpower_recovery_speed = 0.15
+	}
+	xxv_warriors_unity = {
+		discipline = 0.05
+	}
+	xxv_chief_logan = {
+		prestige = 1
+	}
+}
