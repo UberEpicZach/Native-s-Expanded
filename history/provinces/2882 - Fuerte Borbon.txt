@@ -1,0 +1,38 @@
+# - Fuerte Borbon
+
+culture = chane
+discovered_by = south_american
+discovered_by = andean
+religion = exptribes_chibcha
+capital = "Fuerte Borbon"
+discovered_by = X1L
+owner = X1L
+controller = X1L
+add_core = X1L
+trade_goods = grain
+is_city = yes
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+native_size = 50
+native_ferocity = 1
+native_hostileness = 7
+
+1565.1.1 = {
+	remove_core = X1L
+	discovered_by = SPA
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	religion = catholic
+	culture = castillian
+	trade_goods = wool
+	is_city = yes
+} # Founded by Diego de Villaruel
+1816.7.9 = {
+	owner = LAP
+	controller = LAP
+	add_core = LAP
+	remove_core = SPA
+} # Argentina is declared independent

@@ -1,0 +1,32 @@
+# 2734 - Yuin
+
+add_core = A7G
+owner = A7G
+controller = A7G
+is_city = yes
+culture = yuin_kuric
+religion = animism
+capital = "Yuin"
+hre = no
+trade_goods = unknown
+base_manpower = 2
+base_tax = 3 
+base_production = 3
+native_size = 10
+native_ferocity = 1
+native_hostileness = 9
+discovered_by = A7K
+discovered_by = A7M
+discovered_by = A7W
+discovered_by = A7G
+discovered_by = A7A
+discovered_by = A7Y
+discovered_by = A7T
+discovered_by = A7N
+discovered_by = A7P
+discovered_by = A7R
+discovered_by = A7B
+discovered_by = A7I
+discovered_by = A7U
+
+1770.1.1 = { discovered_by = GBR } # James Cook

@@ -1,0 +1,30 @@
+# - Vila Bela
+
+culture = chapacura
+discovered_by = south_american
+religion = animism
+capital = "Vila Bela"
+add_core = X1U
+owner = X1U
+controller = X1U
+trade_goods = copper
+is_city = yes
+hre = no
+base_tax = 2 
+base_production = 1
+base_manpower = 1
+native_size = 10
+native_ferocity = 1 
+native_hostileness = 1
+
+1752.3.19 = {
+	remove_core = X1U
+	discovered_by = POR
+	add_core = POR
+	owner = POR
+	controller = POR
+	culture = portugese
+	religion = catholic
+	trade_goods = copper
+	is_city = yes
+}

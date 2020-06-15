@@ -1,0 +1,42 @@
+# - Rio Das Mortes
+
+culture = kuikuro
+discovered_by = south_american
+religion = exptribes_chibcha
+capital = "Araes"
+trade_goods = tropical_wood
+hre = no
+base_tax = 1 
+base_production = 2
+base_manpower = 1
+native_size = 15
+native_ferocity = 1
+native_hostileness = 7
+owner = X2M
+controller = X2M
+add_core = X2M
+is_city = yes
+
+1550.1.1 = {
+	religion = animism
+	culture = ge
+	owner = XXX
+	controller = XXX
+	remove_core = X2M
+	is_city = no
+	trade_goods = unknown
+}
+
+
+1580.1.1 = { discovered_by = POR }
+
+1710.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+	is_city = yes
+	culture = portugese
+	religion = catholic
+	trade_goods = tropical_wood
+}
+

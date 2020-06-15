@@ -1,0 +1,30 @@
+# - Caceres
+
+culture = tarapecosi
+discovered_by = south_american
+religion = animism
+capital = "Caceres"
+owner = X1T
+controller = X1T
+add_core = X1T
+is_city = yes
+trade_goods = grain
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+native_size = 10
+native_ferocity = 1 
+native_hostileness = 1
+
+1778.10.6 = {
+	remove_core = X1T
+	discovered_by = POR
+	owner = POR
+	controller = POR
+	add_core = POR
+	is_city = yes
+	culture = portugese
+	religion = catholic
+	trade_goods = grain
+} 

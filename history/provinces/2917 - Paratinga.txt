@@ -1,0 +1,31 @@
+# - Paratinga
+
+culture = ge
+discovered_by = south_american
+religion = animism
+capital = "Paratinga"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 7
+owner = X2I
+controller = X2I
+add_core = X2I
+is_city = yes
+
+1500.4.23 = { discovered_by = POR } # Pedro Álvares Cabral
+1630.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+	is_city = yes
+	religion = catholic
+	culture = portugese
+	trade_goods = grain
+	remove_core = X2I
+}
+1745.1.1 = { capital = "Santo Antônio do Urubu de Cima" }
