@@ -1,0 +1,30 @@
+# 1087 - Wiradjuri
+
+add_core = A7W
+owner = A7W
+controller = A7W
+is_city = yes
+culture = wiradhuric
+religion = animism
+capital = "Wiradjuri"
+trade_goods = unknown
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+native_size = 20
+native_ferocity = 7
+native_hostileness = 5
+discovered_by = A7K
+discovered_by = A7M
+discovered_by = A7W
+discovered_by = A7G
+discovered_by = A7A
+discovered_by = A7Y
+discovered_by = A7T
+discovered_by = A7N
+discovered_by = A7P
+discovered_by = A7R
+discovered_by = A7B
+discovered_by = A7I
+discovered_by = A7U

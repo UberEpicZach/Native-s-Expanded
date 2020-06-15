@@ -1,0 +1,22 @@
+discovered_by = MKS
+discovered_by = TER
+discovered_by = TID
+discovered_by = P7T
+discovered_by = A7K
+discovered_by = A7M
+discovered_by = A7W
+discovered_by = A7G
+discovered_by = A7A
+discovered_by = A7Y
+discovered_by = A7T
+discovered_by = A7N
+discovered_by = A7P
+discovered_by = A7R
+discovered_by = A7B
+discovered_by = A7I
+discovered_by = A7U
+
+
+
+1526.1.1 = { discovered_by = POR }
+

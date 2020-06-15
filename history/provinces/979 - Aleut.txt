@@ -1,0 +1,35 @@
+#979 - Aleut
+
+culture = aleutian
+religion = exptribes_shamanism
+capital = "Aleut"
+owner = XX2
+controller = XX2
+add_core = XX2
+is_city = yes
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 2
+base_manpower = 1
+native_size = 5
+native_ferocity = 1 
+native_hostileness = 6 
+
+
+
+discovered_by = north_american
+
+1741.1.1 = { discovered_by = RUS } # Vitus Bering
+1778.1.1 = { discovered_by = GBR } # James Cook
+
+1784.1.1 = {
+	remove_core = XX2
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	culture = russian
+	religion = orthodox
+	is_city = yes
+	trade_goods = fur
+}

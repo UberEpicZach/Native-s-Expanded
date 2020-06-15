@@ -1,0 +1,32 @@
+# 1086 - Kaurna
+
+add_core = A7R
+owner = A7R
+controller = A7R
+is_city = yes
+culture = thura_yura # Kaurna
+religion = animism
+capital = "Kaurna"
+trade_goods = unknown
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 9
+discovered_by = A7K
+discovered_by = A7M
+discovered_by = A7W
+discovered_by = A7G
+discovered_by = A7A
+discovered_by = A7Y
+discovered_by = A7T
+discovered_by = A7N
+discovered_by = A7P
+discovered_by = A7R
+discovered_by = A7B
+discovered_by = A7I
+discovered_by = A7U
+
+1802.1.1 = { discovered_by = GBR } # Matthew Flinders
