@@ -1,0 +1,11 @@
+﻿l_english:
+ exptribes_mesoamerican_tech:0 "Native Council"
+ exptribes_northamerican_tech:0 "Tribal Government"
+ exptribes_tribal_land_mnt:0 "Tribal Government"
+ exptribes_land_mnt_cooldown:0 "Tribal Government"
+ exptribes_clan_migration:0 "Clan Migration"
+ ### Trade Modifiers ###
+ orinoco_estuary_modifier:0 "Orinoco Estuary"
+ amazon_estuary_modifier:0 "Amazon Estuary"
+ tocantins_estuary_modifier:0 "Tocantins Estuary"
+ swanriver_estuary_modifier:0 "Swan River Estuary"
