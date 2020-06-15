@@ -1,0 +1,105 @@
+government = tribal_despotism 
+government_rank = 1
+primary_culture = pipil
+religion = nahuatl
+technology_group = mesoamerican
+capital = 839 # Pipil
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Meicuchuca"
+		dynasty = "Tlacotzin"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Axacaya"
+		monarch_name = "Axacaya"
+		dynasty = "Tlacotzin"
+		birth_date = 1425.1.1
+		death_date = 1490.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1470.1.1 = {
+	monarch = {
+		name = "Opochtli"
+		dynasty = "Tlacotzin"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Axacaya"
+		monarch_name = "Axacaya"
+		dynasty = "Tlacotzin"
+		birth_date = 1442.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Tenoch"
+		dynasty = "Tlacotzin"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "Opochtli"
+		monarch_name = "Opochtli"
+		dynasty = "Tlacotzin"
+		birth_date = 1465.1.1
+		death_date = 1537.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	monarch = {
+		name = "Tenoch"
+		dynasty = "Tlacotzin"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	heir = {
+		name = "Axacaya"
+		monarch_name = "Axacaya"
+		dynasty = "Tlacotzin"
+		birth_date = 1490.1.1
+		death_date = 1538.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

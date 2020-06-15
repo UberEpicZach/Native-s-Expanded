@@ -1,0 +1,104 @@
+government = tribal_federation
+government_rank = 1
+primary_culture = putun
+religion = mesoamerican_religion
+technology_group = mesoamerican
+capital = 2640 # Lenca
+
+1444.1.1 = {
+	monarch = {
+		name = "Butz Chan"
+		dynasty = "Gucamatz"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Vataki"
+		monarch_name = "Vataki"
+		dynasty = "Gucamatz"
+		birth_date = 1425.1.1
+		death_date = 1490.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1470.1.1 = {
+	monarch = {
+		name = "Ahmok"
+		dynasty = "Gucamatz"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Butz Chan"
+		monarch_name = "Butz Chan"
+		dynasty = "Gucamatz"
+		birth_date = 1442.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Vataki"
+		dynasty = "Gucamatz"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "Butz Chan"
+		monarch_name = "Butz Chan"
+		dynasty = "Gucamatz"
+		birth_date = 1465.1.1
+		death_date = 1537.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	monarch = {
+		name = "Ahmok"
+		dynasty = "Gucamatz"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	heir = {
+		name = "Vataki"
+		monarch_name = "Vataki"
+		dynasty = "Gucamatz"
+		birth_date = 1490.1.1
+		death_date = 1538.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

@@ -1,0 +1,165 @@
+# XXU - Monongahela
+
+government = tribal_kingdom 
+government_rank = 1
+primary_culture = monongahela
+religion = exptribes_high_totemism
+technology_group = north_american
+capital = 2551
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Mooksonga"
+		dynasty = "Pashkeekou"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Onewequa"
+		monarch_name = "Onewequa"
+		dynasty = "Pashkeekou"
+		birth_date = 1425.1.1
+		death_date = 1490.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1470.1.1 = {
+	monarch = {
+		name = "Chimokemow"
+		dynasty = "Pashkeekou"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Mooksonga"
+		monarch_name = "Mooksonga"
+		dynasty = "Pashkeekou"
+		birth_date = 1442.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Meewayson"
+		dynasty = "Pashkeekou"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "Chimokemow"
+		monarch_name = "Chimokemow"
+		dynasty = "Pashkeekou"
+		birth_date = 1465.1.1
+		death_date = 1537.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	monarch = {
+		name = "Mooksonga"
+		dynasty = "Pashkeekou"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	heir = {
+		name = "Nemekas"
+		monarch_name = "Nemekas"
+		dynasty = "Pashkeekou"
+		birth_date = 1490.1.1
+		death_date = 1538.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1537.1.1 = {
+	monarch = {
+		name = "Onewequa"
+		dynasty = "Pashkeekou"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1538.1.1 = {
+	heir = {
+		name = "Mooksonga"
+		monarch_name = "Mooksonga"
+		dynasty = "Pashkeekou"
+		birth_date = 1520.1.1
+		death_date = 1580.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1560.1.1 = {
+	monarch = {
+		name = "Nemekas"
+		dynasty = "Pashkeekou"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1580.1.1 = {
+	heir = {
+		name = "Onewequa"
+		monarch_name = "Onewequa"
+		dynasty = "Pashkeekou"
+		birth_date = 1560.1.1
+		death_date = 1620.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1600.1.1 = {
+	monarch = {
+		name = "Mooksonga"
+		dynasty = "Pashkeekou"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

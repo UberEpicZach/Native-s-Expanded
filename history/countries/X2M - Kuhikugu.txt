@@ -1,0 +1,113 @@
+government = tribal_despotism
+primary_culture = kuikuro
+religion = exptribes_chibcha
+technology_group = south_american
+capital = 2905 # Rio Das Mortes
+
+1444.1.1 = {
+	monarch = {
+		name = "Áhari"
+		dynasty = "Ikaroua"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Nenege"
+		monarch_name = "Nenege"
+		dynasty = "Ikaroua"
+		birth_date = 1425.1.1
+		death_date = 1490.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1470.1.1 = {
+	monarch = {
+		name = "Maroni"
+		dynasty = "Ikaroua"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Hayá"
+		monarch_name = "Hayá"
+		dynasty = "Ikaroua"
+		birth_date = 1442.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Áhari"
+		dynasty = "Ikaroua"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "Nenege"
+		monarch_name = "Nenege"
+		dynasty = "Ikaroua"
+		birth_date = 1465.1.1
+		death_date = 1537.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	monarch = {
+		name = "Hayá"
+		dynasty = "Ikaroua"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	heir = {
+		name = "Áhari"
+		monarch_name = "Áhari"
+		dynasty = "Ikaroua"
+		birth_date = 1490.1.1
+		death_date = 1550.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1537.1.1 = {
+	monarch = {
+		name = "Nenege"
+		dynasty = "Ikaroua"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

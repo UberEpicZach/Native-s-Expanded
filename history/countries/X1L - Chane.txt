@@ -1,0 +1,138 @@
+government = tribal_kingdom
+government_rank = 1
+primary_culture = chane
+religion = exptribes_chibcha
+technology_group = south_american
+capital = 2882
+
+1444.1.1 = {
+	monarch = {
+		name = "Muritaro"
+		dynasty = "Kaigouchi"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Toruí"
+		monarch_name = "Toruí"
+		dynasty = "Kaigouchi"
+		birth_date = 1425.1.1
+		death_date = 1490.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1470.1.1 = {
+	monarch = {
+		name = "Kapongong"
+		dynasty = "Kaigouchi"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Muritaro"
+		monarch_name = "Muritaro"
+		dynasty = "Kaigouchi"
+		birth_date = 1442.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Pirijá"
+		dynasty = "Kaigouchi"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "Pirijá"
+		monarch_name = "Pirijá"
+		dynasty = "Kaigouchi"
+		birth_date = 1465.1.1
+		death_date = 1537.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	monarch = {
+		name = "Waia"
+		dynasty = "Kaigouchi"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	heir = {
+		name = "Muritaro"
+		monarch_name = "Muritaro"
+		dynasty = "Kaigouchi"
+		birth_date = 1490.1.1
+		death_date = 1538.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1537.1.1 = {
+	monarch = {
+		name = "Toruí"
+		dynasty = "Kaigouchi"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1538.1.1 = {
+	heir = {
+		name = "Kapongong"
+		monarch_name = "Kapongong"
+		dynasty = "Kaigouchi"
+		birth_date = 1520.1.1
+		death_date = 1580.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1560.1.1 = {
+	monarch = {
+		name = "Waia"
+		dynasty = "Kaigouchi"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
