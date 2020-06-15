@@ -1,0 +1,140 @@
+government = tribal_kingdom
+government_rank = 1
+primary_culture = timotocuica
+religion = exptribes_chibcha
+technology_group = south_american
+capital = 2813
+historical_friend = X0X
+
+1444.1.1 = {
+	monarch = {
+		name = "Quemuenchatocha"
+		dynasty = "Guecha"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Saguamanchica"
+		monarch_name = "Saguamanchica"
+		dynasty = "Guecha"
+		birth_date = 1425.1.1
+		death_date = 1490.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1470.1.1 = {
+	monarch = {
+		name = "Tutazúa"
+		dynasty = "Guecha"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Nemequene"
+		monarch_name = "Nemequene"
+		dynasty = "Guecha"
+		birth_date = 1442.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Quemuenchatocha"
+		dynasty = "Guecha"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "Tisquesusa"
+		monarch_name = "Tisquesusa"
+		dynasty = "Guecha"
+		birth_date = 1465.1.1
+		death_date = 1537.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	monarch = {
+		name = "Tutazúa"
+		dynasty = "Guecha"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	heir = {
+		name = "Sagipa"
+		monarch_name = "Sagipa"
+		dynasty = "Guecha"
+		birth_date = 1490.1.1
+		death_date = 1538.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1537.1.1 = {
+	monarch = {
+		name = "Quemuenchatocha"
+		dynasty = "Guecha"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1538.1.1 = {
+	heir = {
+		name = "Sagipa"
+		monarch_name = "Sagipa"
+		dynasty = "Guecha"
+		birth_date = 1520.1.1
+		death_date = 1572.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1551.1.1 = {
+	monarch = {
+		name = "Quemuenchatocha"
+		dynasty = "Guecha"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+

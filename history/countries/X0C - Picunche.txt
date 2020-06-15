@@ -1,0 +1,20 @@
+government = native_council 
+government_rank = 1
+primary_culture = mapuche
+religion = animism
+technology_group = south_american
+historical_friend = X0A
+historical_friend = X0B
+historical_friend = X0D
+capital = 787
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Native Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

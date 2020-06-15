@@ -1,0 +1,190 @@
+government = tribal_kingdom 
+government_rank = 1
+primary_culture = natchez
+religion = exptribes_high_totemism
+technology_group = north_american
+capital = 2529 # Natchez
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Tchowainin"
+		dynasty = "Natchitoches"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Sohone"
+		monarch_name = "Sohone"
+		dynasty = "Natchitoches"
+		birth_date = 1425.1.1
+		death_date = 1490.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1470.1.1 = {
+	monarch = {
+		name = "Sanninow"
+		dynasty = "Natchitoches"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Tchowainin"
+		monarch_name = "Tchowainin"
+		dynasty = "Natchitoches"
+		birth_date = 1442.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Sohone"
+		dynasty = "Natchitoches"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "Tsauninot"
+		monarch_name = "Tsauninot"
+		dynasty = "Natchitoches"
+		birth_date = 1465.1.1
+		death_date = 1537.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	monarch = {
+		name = "Tisquesusa"
+		dynasty = "Natchitoches"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1514.1.1 = {
+	heir = {
+		name = "Adai"
+		monarch_name = "Adai"
+		dynasty = "Natchitoches"
+		birth_date = 1490.1.1
+		death_date = 1538.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1537.1.1 = {
+	monarch = {
+		name = "Sanninow"
+		dynasty = "Natchitoches"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1538.1.1 = {
+	heir = {
+		name = "Tsauninot"
+		monarch_name = "Tsauninot"
+		dynasty = "Natchitoches"
+		birth_date = 1520.1.1
+		death_date = 1580.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1560.1.1 = {
+	monarch = {
+		name = "Tchowainin"
+		dynasty = "Natchitoches"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1580.1.1 = {
+	heir = {
+		name = "Sanninow"
+		monarch_name = "Sanninow"
+		dynasty = "Natchitoches"
+		birth_date = 1560.1.1
+		death_date = 1620.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1600.1.1 = {
+	monarch = {
+		name = "Kianhoon"
+		dynasty = "Natchitoches"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1620.1.1 = {
+	heir = {
+		name = "Adai"
+		monarch_name = "Adai"
+		dynasty = "Natchitoches"
+		birth_date = 1600.1.1
+		death_date = 1650.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1650.1.1 = {
+	government = native_council 
+	government_rank = 1
+	religion = totemism
+	monarch = {
+		name = "Native Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

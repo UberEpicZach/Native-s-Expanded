@@ -1,0 +1,15 @@
+government = native_council
+technology_group = south_american
+religion = exptribes_polynesian
+primary_culture = maori
+capital = 1106	# Awngthim
+
+1444.11.11 = {
+	monarch = {
+		name = "Native Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

@@ -1,0 +1,56 @@
+government = tribal_kingdom 
+government_rank = 1
+primary_culture = cahokia
+religion = exptribes_high_totemism
+technology_group = north_american
+capital = 917 # Cahokia
+
+1444.1.1 = {
+	monarch = {
+		name = "Penision"
+		dynasty = "Mewatanihanska"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1444.1.1 = {
+	heir = {
+		name = "Wasaota"
+		monarch_name = "Wasaota"
+		dynasty = "Mewatanihanska"
+		birth_date = 1425.1.1
+		death_date = 1490.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1470.1.1 = {
+	monarch = {
+		name = "Wabasha"
+		dynasty = "Mewatanihanska"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "Penision"
+		monarch_name = "Penision"
+		dynasty = "Mewatanihanska"
+		birth_date = 1442.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
