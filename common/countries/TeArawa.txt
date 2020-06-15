@@ -1,0 +1,47 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+color = { 60  60  185 }
+
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	offensive_ideas
+	maritime_ideas
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	algonkin_tomahawk_charge
+	commanche_swarm
+	native_indian_mountain_warfare
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+monarch_names = {
+	"Gatjil #0" = 10
+	"Lowitja #0" = 10
+	"Galarrwuy #0" = 10
+	"Mandawuy #0" = 10
+	"Yagan #0" = 10
+	"Pemulwuy #0" = 10
+	"Windradyne #0" = 10
+}
+
+leader_names = {
+	Gatjil
+	Lowitja
+	Galarrwuy
+	Mandawuy
+	Yagan
+	Pemulwuy
+	Windradyne
+}
+
+ship_names = {
+	Alyawarre "Wiradjuri" Barbaram "Jagara"
+}
