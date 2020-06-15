@@ -1,0 +1,35 @@
+country_decisions = {
+
+	exptribes_illiniwek_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = ILL }
+			primary_culture = illini
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 915
+			owns_core_province = 917
+			owns_core_province = 916
+			owns_core_province = 2520
+		}
+		effect = {
+			change_tag = ILL
+			
+			every_owned_province = {
+				limit = {
+					culture = illini
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

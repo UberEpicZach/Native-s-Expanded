@@ -1,0 +1,37 @@
+country_decisions = {
+
+	exptribes_cree_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = WCR }
+			primary_culture = cree
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 999
+			owns_core_province = 1000
+			owns_core_province = 1003
+			owns_core_province = 2589
+		}
+		effect = {
+			change_tag = WCR
+			
+			every_owned_province = {
+				limit = {
+					culture = cree
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

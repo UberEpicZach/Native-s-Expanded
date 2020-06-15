@@ -1,0 +1,38 @@
+country_decisions = {
+
+	exptribes_creek_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = CRE }
+			culture_group = muskogean
+			NOT = { tag = QQB } # Seminole
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 925
+			owns_core_province = 930
+			owns_core_province = 2537
+			owns_core_province = 2538
+		}
+		effect = {
+			change_tag = CRE
+			
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = ROOT }
+					culture_group = muskogean
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

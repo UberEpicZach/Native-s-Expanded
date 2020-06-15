@@ -1,0 +1,40 @@
+country_decisions = {
+
+	exptribes_apache_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = APA }
+			primary_culture = apache
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					culture = apache
+				}
+				amount = 4
+			}
+		}
+		effect = {
+			change_tag = APA
+			
+			every_owned_province = {
+				limit = {
+					culture = apache
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

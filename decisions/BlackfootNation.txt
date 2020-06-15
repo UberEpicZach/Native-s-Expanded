@@ -1,0 +1,37 @@
+country_decisions = {
+
+	exptribes_blackfoot_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = BLA }
+			primary_culture = blackfoot
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 2501
+			owns_core_province = 2004
+			owns_core_province = 2602
+			owns_core_province = 2017
+		}
+		effect = {
+			change_tag = BLA
+			
+			every_owned_province = {
+				limit = {
+					culture = blackfoot
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

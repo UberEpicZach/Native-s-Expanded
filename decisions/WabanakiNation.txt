@@ -1,0 +1,47 @@
+country_decisions = {
+
+	exptribes_wabanaki_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = XXN }
+			OR = {
+				primary_culture = abenaki
+				primary_culture = mikmak
+				primary_culture = maliseet
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 970
+			owns_core_province = 2013
+			owns_core_province = 2565
+			owns_core_province = 971
+			owns_core_province = 2566
+		}
+		effect = {
+			change_tag = XXN
+			
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = ROOT }
+					OR = {
+						culture = abenaki
+						culture = mikmak
+						culture = maliseet
+					}
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+			
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

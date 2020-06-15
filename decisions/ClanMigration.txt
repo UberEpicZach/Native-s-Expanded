@@ -1,0 +1,42 @@
+country_decisions = {
+
+	exptribes_clanmigration_decision = {
+		major = no
+		potential = {
+			OR = {
+				# start event gives all advanced American nations one of these modifiers
+				has_country_modifier = exptribes_tribal_land_mnt
+				has_country_modifier = exptribes_northamerican_tech
+			}
+			NOT = { has_country_flag = exptribes_reform_counter }# country already had a chance to get a colonist
+			NOT = { has_country_modifier = exptribes_clan_migration }# already took decision
+		}
+		
+		allow = {
+			is_subject = no
+			is_at_war = no
+			dip_power = 500
+		}
+		
+		effect = {
+		
+			add_dip_power = -500
+		
+			add_country_modifier = {
+				name = "exptribes_clan_migration"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				AND = { 
+					has_dlc = "El Dorado"
+					religion = nahuatl
+				} # colonist doesn't help countries that use doom mechanic
+			}
+		}
+	}
+}

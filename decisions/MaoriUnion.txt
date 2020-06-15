@@ -1,0 +1,86 @@
+country_decisions = {
+
+	exptribes_maori_nation = { #Form Maori kingitanga
+		major = yes
+		potential = {
+			capital_scope = {
+				OR ={
+					area = te_waipounamu_area
+					area = te_ika_a_maui_area
+				}
+			}
+			NOT = { 
+				exists = M7M 
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+				has_country_flag = changed_from_colonial_nation
+			}
+			primary_culture = maori
+		}
+		
+		allow = {
+			is_subject = no
+			is_at_war = no
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					OR = {
+						area = te_waipounamu_area
+						area = te_ika_a_maui_area
+					}
+				}
+				amount = 4
+			}
+		}
+		effect = {
+			change_tag = M7M
+			
+			te_ika_a_maui_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = M7M
+			}
+			
+			te_waipounamu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = M7M
+			}
+			
+			every_country = {
+				limit = {
+					vassal_of = ROOT
+					capital_scope = {
+						OR = {
+							area = te_ika_a_maui_area
+							area = te_waipounamu_area
+						}
+					}
+				}
+				ROOT = {
+					inherit = PREV
+				}
+			}
+			
+			add_prestige = 25
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			#change_government = tribal_kingdom
+			
+			#if = { #SET TO KINGDOM RANK IF DUCHY
+			#	limit = {
+			#		government_rank = 1
+			#	}
+			#	set_government_rank = 2
+			#}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

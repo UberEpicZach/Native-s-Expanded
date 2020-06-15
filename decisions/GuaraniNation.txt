@@ -1,0 +1,39 @@
+country_decisions = {
+
+	exptribes_guarani_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = GUA }
+			primary_culture = guarani
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 2853
+			owns_core_province = 2859
+			owns_core_province = 777
+			owns_core_province = 775
+			owns_core_province = 2958
+		}
+		effect = {
+			change_tag = GUA
+			
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = ROOT }
+					culture = guarani
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+			
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

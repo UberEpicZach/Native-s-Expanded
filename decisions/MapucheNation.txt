@@ -1,0 +1,37 @@
+country_decisions = {
+
+	exptribes_mapuche_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = MPC }
+			primary_culture = mapuche
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 2873 # Chiloe
+			owns_core_province = 787 # Pincunmapu
+			owns_core_province = 784 # Huillimapu
+			owns_core_province = 785 # Pehuenmapu
+		}
+		effect = {
+			change_tag = MPC
+			
+			every_owned_province = {
+				limit = {
+					culture = mapuche
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

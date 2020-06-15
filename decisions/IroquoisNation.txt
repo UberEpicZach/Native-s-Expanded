@@ -1,0 +1,121 @@
+country_decisions = {
+
+	exptribes_iroquois_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = IRO }
+			culture_group = iroquoian
+			NOT = { tag = CHE } #Cherokee
+			NOT = { tag = HUR } #Huron
+			NOT = { tag = WWA } #Tionontati
+			NOT = { tag = XXV } #Mingo
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 958
+			owns_core_province = 959
+			owns_core_province = 960
+			owns_core_province = 961
+			owns_core_province = 964
+		}
+		effect = {
+			change_tag = IRO
+			
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = ROOT }
+					culture_group = iroquoian
+					
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	exptribes_mingo_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = XXV }
+			OR = {
+				tag = XXG #Seneca
+				tag = XXH #Cayuga
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 948
+			948  = { culture = iroquois }
+		}
+		effect = {
+			change_tag = XXV
+			
+			ohio_country_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = XXV
+			}
+			
+			kentucky_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = XXV
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	exptribes_huron_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = HUR }
+			primary_culture = huron
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 987
+			owns_core_province = 2586
+			owns_core_province = 988
+			owns_core_province = 2670
+		}
+		effect = {
+			change_tag = HUR
+			
+			every_owned_province = {
+				limit = {
+					culture = huron
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

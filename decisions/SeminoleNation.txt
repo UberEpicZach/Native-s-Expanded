@@ -1,0 +1,39 @@
+country_decisions = {
+
+	exptribes_seminole_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = QQB }
+			OR = {
+				tag = XXY # Hitchiti
+				tag = XXW # Catawba
+				tag = XXS # Yamassee
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			is_tribal = no
+			owns_core_province = 2535
+			owns_core_province = 2534
+		}
+		effect = {
+			change_tag = QQB
+			
+			every_owned_province = {
+				limit = { is_core = ROOT }
+				change_culture = seminole
+			}
+			
+			change_primary_culture = seminole
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

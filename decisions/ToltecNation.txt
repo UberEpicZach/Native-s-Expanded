@@ -1,0 +1,68 @@
+country_decisions = {
+
+	exptribes_toltec_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = T0L }
+			technology_group = mesoamerican
+			OR = {
+				culture_group = central_american
+				culture_group = otomanguean
+			}
+			OR = {
+				religion = animism
+				religion = nahuatl
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			NOT = { government = native_council }# Chichimeca must reform government
+			any_owned_province = { area = jalisco_area }
+			any_owned_province = { area = michoacan_area }
+			any_owned_province = { area = gran_chichimeca_area }
+			any_owned_province = { area = mexico_area }
+			any_owned_province = { area = guerrero_area }
+			any_owned_province = { area = oaxaca_area }
+			any_owned_province = { area = eastern_mexico_area }
+			any_owned_province = { area = chiapas_area }
+			any_owned_province = { area = yucatan_area }
+		}
+		effect = {
+			change_tag = T0L
+			
+			if = {
+				limit = { has_country_modifier = exptribes_mesoamerican_tech }#Chichimeca
+				
+				remove_country_modifier = exptribes_mesoamerican_tech
+				add_country_modifier = {
+					name = "exptribes_tribal_land_mnt"
+					duration = -1
+				}
+				add_country_modifier = {
+					name = "exptribes_clan_migration"
+					duration = -1
+				}
+			}
+			
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture_group = central_american
+						culture_group = otomanguean
+					}
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

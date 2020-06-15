@@ -1,0 +1,37 @@
+country_decisions = {
+
+	exptribes_chichimeca_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = WWQ }
+			primary_culture = chichimecan
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 2617
+			owns_core_province = 856
+			owns_core_province = 857
+			owns_core_province = 2615
+		}
+		effect = {
+			change_tag = WWQ
+			
+			every_owned_province = {
+				limit = {
+					culture = chichimecan
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			
+			hidden_effect = { country_event = { id = exptribes.3 } }# swap ideas
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
