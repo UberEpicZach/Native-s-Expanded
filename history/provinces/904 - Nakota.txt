@@ -1,0 +1,26 @@
+#904 - Nakota
+
+culture = lakota
+religion = totemism
+capital = "Nakota"
+owner = QQR
+controller = QQR
+add_core = QQR
+trade_goods = fur
+is_city = yes
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 30
+native_ferocity = 3
+native_hostileness = 7
+discovered_by = north_american
+
+1650.1.1 = {
+	remove_core = QQR
+ 	owner = SIO
+	controller = SIO
+	add_core = SIO
+} #Position of the natives circal the Beaver Wars
+1738.1.1 = { discovered_by = FRA }# Pierre Gaultier de Varennes, no real settlements until the 1800's

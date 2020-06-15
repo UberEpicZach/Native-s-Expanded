@@ -1,0 +1,22 @@
+#972 - Nootka
+
+culture = mowachaht
+religion = totemism
+capital = "Nootka"
+owner = XQC
+controller = XQC
+add_core = XQC
+trade_goods = fish
+is_city = yes
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+native_size = 5
+native_ferocity = 1
+native_hostileness = 6
+discovered_by = north_american
+
+1543.1.1 = { discovered_by = SPA }
+1778.1.1 = { discovered_by = GBR }
+

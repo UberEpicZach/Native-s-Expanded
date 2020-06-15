@@ -1,0 +1,36 @@
+#859 - Sinaloa
+
+culture = cahita
+religion = exptribes_teopeyotl 
+capital = "Sinaloa" 
+owner = WWI
+controller = WWI
+add_core = WWI
+is_city = yes
+trade_goods = grain
+hre = no 
+base_tax = 2
+base_production = 2
+base_manpower = 1 
+native_size = 5 
+native_ferocity = 1 
+native_hostileness = 5
+discovered_by = mesoamerican
+
+1428.1.1 = { discovered_by = AZT }
+1531.3.1 = { discovered_by = SPA }
+
+
+1531.9.1 = {
+	remove_core = WWI
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	capital = "Culiacán"
+	is_city = yes
+	culture = castillian
+	religion = catholic
+	trade_goods = grain
+}
+1578.1.1 = { discovered_by = ENG } # Drake
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
