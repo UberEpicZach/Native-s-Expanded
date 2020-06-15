@@ -1,0 +1,315 @@
+########################################
+# Events for Religious Reforms system
+#
+# written by Martin Anward
+########################################
+
+namespace = religious_reforms
+
+# Nahuatl reform
+country_event = {
+	id = religious_reforms.1
+	title = religious_reforms.1.t
+	desc = religious_reforms.1.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "El Dorado"
+		religion = nahuatl
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_stability = -1
+			release_all_subjects = yes 
+			add_doom = 25
+			
+			################# exptribes ##############
+			if = {
+				limit = { NOT = { has_country_flag = exptribes_reform_counter } }#First Reform
+		
+				if = {
+					limit = { has_country_modifier = exptribes_clan_migration }
+					remove_country_modifier = exptribes_clan_migration # Can now get a colonist through religious reform
+				}
+		
+				set_country_flag = exptribes_reform_counter # Set Counter
+				set_variable = {
+					which = exptribes_reform_counter
+					value = 0
+				}
+			}
+	
+			# Increment counter by 1
+			change_variable = {
+				which = exptribes_reform_counter
+				value = 1
+			}
+			################ end exptribes script ##########
+		}
+	}
+	
+	option = {
+		name = religious_reforms.1.a
+		tooltip = {
+			add_stability = -1
+			release_all_subjects = yes
+			add_doom = 25
+		}
+	}
+}
+
+# Inti reform
+country_event = {
+	id = religious_reforms.2
+	title = religious_reforms.2.t
+	desc = religious_reforms.2.d
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "El Dorado"
+		religion = inti
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {		
+			add_authority = -100 
+			add_stability = -2
+			
+			random_owned_province = {
+				limit = { 
+					is_in_capital_area = yes 
+					is_capital = no
+				}
+				set_province_flag = civil_war_prov_1
+			}		
+			random_owned_province = {
+				limit = { 
+					is_in_capital_area = yes
+					is_capital = no
+					NOT = { has_province_flag = civil_war_prov_1 }
+				}
+				set_province_flag = civil_war_prov_2
+			}
+			random_owned_province = {
+				limit = { 
+					is_in_capital_area = yes 
+					is_capital = no
+					NOT = { has_province_flag = civil_war_prov_1 }
+					NOT = { has_province_flag = civil_war_prov_2 }
+				}
+				set_province_flag = civil_war_prov_3
+			}			
+			
+			random_owned_province = {
+				limit = { has_province_flag = civil_war_prov_1 }
+				pretender_rebels = 4
+				clr_province_flag = civil_war_prov_1
+			}
+			random_owned_province = {
+				limit = { has_province_flag = civil_war_prov_2 }
+				pretender_rebels = 3
+				clr_province_flag = civil_war_prov_2
+			}
+			random_owned_province = {
+				limit = { has_province_flag = civil_war_prov_3 }
+				pretender_rebels = 3
+				clr_province_flag = civil_war_prov_3
+			}			
+			################# exptribes ##############
+			if = {
+				limit = { NOT = { has_country_flag = exptribes_reform_counter } }#First Reform
+		
+				if = {
+					limit = { has_country_modifier = exptribes_clan_migration }
+					remove_country_modifier = exptribes_clan_migration # Can now get a colonist through religious reform
+				}
+		
+				set_country_flag = exptribes_reform_counter # Set Counter
+				set_variable = {
+					which = exptribes_reform_counter
+					value = 0
+				}
+			}
+	
+			# Increment counter by 1
+			change_variable = {
+				which = exptribes_reform_counter
+				value = 1
+			}
+			################ end exptribes script ##########
+		}
+		
+	}	
+	
+	option = {
+		name = religious_reforms.2.a
+		tooltip = {
+			add_stability = -2
+			add_authority = -100			
+		}		
+	}
+}
+
+# Mayan reform
+country_event = {
+	id = religious_reforms.3
+	title = religious_reforms.3.t
+	desc = religious_reforms.3.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "El Dorado"
+		OR = {
+			religion = mesoamerican_religion
+			religion = exptribes_chibcha
+			religion = exptribes_high_totemism
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = { 
+			add_stability = -1
+			if = {
+				limit = { religion = mesoamerican_religion }
+				
+				release_all_subjects = yes
+				collapse_nation = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						religion = exptribes_chibcha
+						religion = exptribes_high_totemism
+					}
+				}
+				
+				add_adm_power = -500
+				add_dip_power = -500
+				add_mil_power = -500
+			}
+			
+			################# exptribes ##############
+			if = {
+				limit = { NOT = { has_country_flag = exptribes_reform_counter } }#First Reform
+		
+				if = {
+					limit = { has_country_modifier = exptribes_clan_migration }
+					remove_country_modifier = exptribes_clan_migration # Can now get a colonist through religious reform
+				}
+		
+				set_country_flag = exptribes_reform_counter # Set Counter
+				set_variable = {
+					which = exptribes_reform_counter
+					value = 0
+				}
+			}
+	
+			# Increment counter by 1
+			change_variable = {
+				which = exptribes_reform_counter
+				value = 1
+			}
+			################ end exptribes script ##########
+		}
+	}
+	
+	option = {
+		name = religious_reforms.1.a
+		trigger = { religion = mesoamerican_religion }
+		tooltip = {
+			add_stability = -1
+			release_all_subjects = yes
+			collapse_nation = yes
+		}
+	}
+	
+	option = {
+		name = exptribes.4.a
+		trigger = {
+			OR = {
+				religion = exptribes_chibcha
+				religion = exptribes_high_totemism
+			}
+		}
+		tooltip = {
+			add_adm_power = -500
+			add_dip_power = -500
+			add_mil_power = -500
+		}
+	}
+}
+
+# Chibcha reform
+#country_event = {
+#	id = religious_reforms.4
+#	title = religious_reforms.3.t
+#	desc = religious_reforms.3.d
+#	picture = ANGRY_MOB_eventPicture
+#
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_dlc = "El Dorado"
+#		religion = exptribes_chibcha
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	immediate = {
+#		hidden_effect = { 
+#			add_adm_power = -500
+#			add_mil_power = -500
+#			################# exptribes ##############
+#			if = {
+#				limit = { NOT = { has_country_flag = exptribes_reform_counter } }#First Reform
+#		
+#				if = {
+#					limit = { has_country_modifier = exptribes_clan_migration }
+#					remove_country_modifier = exptribes_clan_migration # Can now get a colonist through religious reform
+#				}
+#		
+#				set_country_flag = exptribes_reform_counter # Set Counter
+#				set_variable = {
+#					value = 0
+#				}
+#			}
+#	
+#			# Increment counter by 1
+#			change_variable = {
+#				which = exptribes_reform_counter
+#				value = 1
+#			}
+#			################ end exptribes script ##########
+#		}
+#	}
+#	
+#	option = {
+#		name = religious_reforms.1.a
+#		tooltip = {
+#			add_adm_power = -500
+#			add_dip_power = -500
+#			add_mil_power = -500
+#		}
+#	}
+#}

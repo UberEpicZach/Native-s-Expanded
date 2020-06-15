@@ -1,0 +1,567 @@
+namespace = exptribes
+
+###############################################
+#     Initialization & Maintenance Events     #
+###############################################
+
+# Start event to make sure countries outside of their tech groups core area
+# have discovered all of their surrounding provinces
+#
+# Sets modifiers to bring countries government types and tech groups in line
+#
+# Fires in a random central asian province to keep it hidden from the player
+#
+country_event = {
+	id = exptribes.1
+	title = "exptribes.1.t"
+	desc = "exptribes.1.d"
+	picture = COMET_SIGHTED_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		owns = 2121
+		2121 = { NOT = { has_province_flag = exptribes_start_event } }
+	}
+
+	immediate = {
+		hidden_effect = {
+			2121 = { set_province_flag = exptribes_start_event }
+			
+			every_province = {
+				limit = { continent = south_america }
+				
+				undiscover_country = A7K
+				undiscover_country = A7M
+				undiscover_country = A7W
+				undiscover_country = A7G
+				undiscover_country = A7A
+				undiscover_country = A7Y
+				undiscover_country = A7T
+				undiscover_country = A7N
+				undiscover_country = A7P
+				undiscover_country = A7R
+				undiscover_country = A7B
+				undiscover_country = A7I
+				undiscover_country = A7U
+				undiscover_country = M7W
+				undiscover_country = M7T
+				undiscover_country = M7A
+				undiscover_country = M7P
+				undiscover_country = M7K
+				undiscover_country = P7T
+				
+				sea_zone = {
+					undiscover_country = A7K
+					undiscover_country = A7M
+					undiscover_country = A7W
+					undiscover_country = A7G
+					undiscover_country = A7A
+					undiscover_country = A7Y
+					undiscover_country = A7T
+					undiscover_country = A7N
+					undiscover_country = A7P
+					undiscover_country = A7R
+					undiscover_country = A7B
+					undiscover_country = A7I
+					undiscover_country = A7U
+					undiscover_country = M7W
+					undiscover_country = M7T
+					undiscover_country = M7A
+					undiscover_country = M7P
+					undiscover_country = M7K
+					undiscover_country = P7T
+				}
+			}
+			
+			carribeans_region = {	
+			
+				limit = { NOT = { province_id = 481 } }
+			
+				discover_country = WWF
+				discover_country = WWG
+				discover_country = QQA
+				discover_country = WWW
+				discover_country = X0Z
+				discover_country = X1F
+				
+				sea_zone = {
+					discover_country = WWF
+					discover_country = WWG
+					discover_country = QQA
+					discover_country = WWW
+					discover_country = X0Z
+					discover_country = X1F
+				}
+			}
+			
+			1505 = {
+				discover_country = WWF
+				discover_country = WWG
+				discover_country = QQA
+				discover_country = WWW
+				discover_country = X0Z
+				discover_country = X1F
+			}
+			
+			1512 = {
+				discover_country = WWF
+				discover_country = WWG
+				discover_country = QQA
+				discover_country = WWW
+				discover_country = X0Z
+				discover_country = X1F
+			}
+
+			florida_area = {
+				
+				discover_country = WWF
+				discover_country = WWG
+				
+				sea_zone = {
+					discover_country = WWF
+					discover_country = WWG
+				}
+			}
+			
+			mexico_region = {	
+				discover_country = WWH 
+				discover_country = WWI
+				discover_country = WWK
+				discover_country = WWL
+
+			}
+			
+			llano_estacado_area = {
+				discover_country = WWL
+
+			}
+			
+			central_america_region = {
+				discover_country = X2B
+				discover_country = X2C
+				discover_country = X2E
+				discover_country = X2F
+				
+				sea_zone = {
+					discover_country = X2B
+					discover_country = X2C
+					discover_country = X2E
+					discover_country = X2F
+				}
+			}
+			
+			every_country = {
+				limit = { religion = exptribes_teopeyotl }
+				country_event = {
+					id = exptribes.5
+					days = 1
+				}
+			}
+			
+			if = {
+				limit = { NOT = { is_year = 1700 } }
+				every_country = {
+					limit = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = south_american
+							technology_group = andean
+						}
+						NOT = { government = native_council }
+					}
+				
+					add_country_modifier = {
+						name = "exptribes_northamerican_tech"
+						duration = -1
+					}
+					
+					if = {
+						limit = { religion = exptribes_teopeyotl }
+						country_event = {
+							id = exptribes.5
+							days = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = { name = "exptribes.1.a" }
+}# end event
+
+# Gives the Taino a transport early in the game
+country_event = {
+	id = exptribes.2
+	title = "exptribes.2.t"
+	desc = "exptribes.2.d"
+	picture = SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WWF
+		technology_group = south_american
+		dip_tech = 2
+		num_of_ports = 2
+		NOT = { num_of_transport = 1 }
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "exptribes.2.a" # We're gonna need a bigger boat
+		ai_chance = { factor = 100 }
+		random_owned_province = {
+			limit = { has_port = yes }
+			transport = ROOT 
+		}
+	}
+	
+}# end event
+
+# Swap idea groups
+# This event is triggered by decisions to form nations with custom ideas
+# We need a separate event from ideagroups.1 because the generic idea groups
+# in the mod are already "custom"
+country_event = {
+	id = exptribes.3
+	title = ideagroups.1.t
+	desc = ideagroups.1.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ideagroups.1.a #Yes Please!
+		swap_free_idea_group = yes		#keep progress
+	}
+	option = {
+		name = ideagroups.1.b #No, we cannot abandon our roots.
+		#No Effect
+	}
+}
+
+# Clean-up event for countries that have westernized
+# Fired by three year pulse
+country_event = {
+	id = exptribes.4
+	title = exptribes.4.t
+	desc = exptribes.4.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		primitives = no
+		has_country_modifier = exptribes_northamerican_tech
+		NOT = { has_country_modifier = expislander_shipcost }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = exptribes_clan_migration
+			remove_country_modifier = exptribes_northamerican_tech
+		}
+	}
+	option = {
+		name = exptribes.4.a
+		tooltip = {
+			remove_country_modifier = exptribes_northamerican_tech
+			remove_country_modifier = exptribes_clan_migration
+		}
+	}
+}
+
+######################################
+#          Teopeyotl Events          #
+######################################
+
+# Teopeyotl events are triggered by the three-year pulse
+#
+# Informs the player that conditions for other events are not met
+country_event = {
+	id = exptribes.5
+	title = exptribes.5.t
+	desc = exptribes.5.d
+	picture = PRAYING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = exptribes.5.a
+	}
+}
+
+# blue deer
+country_event = {
+	id = exptribes.6
+	title = exptribes.6.t
+	desc = exptribes.6.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_teopeyotl
+		prestige = 1
+		stability = 1
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = exptribes.6.a
+		add_patriarch_authority = 0.05
+	}
+	option = {
+		name = exptribes.6.b
+		add_patriarch_authority = -0.05
+		add_prestige = 5
+	}
+}
+
+# moon goddess
+country_event = {
+	id = exptribes.7
+	title = exptribes.7.t
+	desc = exptribes.7.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_teopeyotl
+		prestige = 1
+		stability = 1
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = exptribes.7.a
+		add_patriarch_authority = 0.05
+	}
+	option = {
+		name = exptribes.7.b
+		add_patriarch_authority = -0.05
+		add_inflation = -0.5
+	}
+}
+
+# war god
+country_event = {
+	id = exptribes.8
+	title = exptribes.8.t
+	desc = exptribes.8.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_teopeyotl
+		prestige = 1
+		stability = 1
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = exptribes.8.a
+		add_patriarch_authority = 0.05
+	}
+	option = {
+		name = exptribes.8.b
+		add_patriarch_authority = -0.05
+		add_army_tradition = 5
+	}
+}
+
+# peyote hunt
+country_event = {
+	id = exptribes.9
+	title = exptribes.9.t
+	desc = exptribes.9.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_teopeyotl
+		prestige = 1
+		stability = 1
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = exptribes.9.a
+		add_patriarch_authority = 0.05
+	}
+	option = {
+		name = exptribes.9.b
+		add_patriarch_authority = -0.05
+		add_manpower = 0.1
+	}
+}
+
+# animal sacrifice
+country_event = {
+	id = exptribes.10
+	title = exptribes.10.t
+	desc = exptribes.10.d
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_teopeyotl
+		prestige = 1
+		stability = 1
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = exptribes.10.a
+		add_patriarch_authority = 0.05
+	}
+	option = {
+		name = exptribes.10.b
+		add_patriarch_authority = -0.05
+		add_stability = 1
+	}
+}
+
+#######################################
+#          Polynesian Events          #
+#######################################
+
+# Fired by one year pulse
+# Takes all church power from Polynesian Religion Countries with negative Prestige
+country_event = {
+	id = exptribes.11
+	title = exptribes.11.t
+	desc = exptribes.11.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_polynesian
+		NOT = { prestige = 1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_church_power = -100
+		}
+	}
+	
+	option = {
+		name = exptribes.11.a
+		tooltip = {
+			add_church_power = -100
+		}
+	}
+}
+
+# Fired by five year pulse
+# Adds church power to Polynesian Religion Countries with high Prestige
+country_event = {
+	id = exptribes.12
+	title = exptribes.12.t
+	desc = exptribes.12.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_polynesian
+		prestige = 40
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = exptribes.12.a
+		add_church_power = 10
+	}
+}
+
+# Fired by on win war on action (Root)
+# Adds church power to Polynesian Religion Countries that win a war
+country_event = {
+	id = exptribes.13
+	title = exptribes.13.t
+	desc = exptribes.13.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_polynesian
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = exptribes.13.a
+		add_church_power = 50
+	}
+}
+
+# Fired by on win war on action (From)
+# Takes all church power from Polynesian Religion Countries that lose a war
+country_event = {
+	id = exptribes.14
+	title = exptribes.14.t
+	desc = exptribes.14.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion = exptribes_polynesian
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = exptribes.14.a
+		add_church_power = -100
+	}
+}
