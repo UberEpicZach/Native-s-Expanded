@@ -1,6 +1,6 @@
 # XXY - Hitchiti
 
-government = native_council government_rank = 1
+government = native government_rank = 1
 primary_culture = hitchiti
 religion = totemism
 technology_group = north_american

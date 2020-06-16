@@ -1,4 +1,4 @@
-government = tribal_despotism
+government = tribal add_government_reform = tribal_despotism
 primary_culture = kuikuro
 religion = exptribes_chibcha
 technology_group = south_american

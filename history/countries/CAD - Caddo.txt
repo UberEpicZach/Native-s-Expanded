@@ -176,7 +176,7 @@ capital = 894 # Caddo
 }
 
 1650.1.1 = {
-	government = native_council 
+	government = native 
 	government_rank = 1
 	religion = totemism
 	monarch = {

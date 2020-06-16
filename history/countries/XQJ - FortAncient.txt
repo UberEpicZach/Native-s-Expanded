@@ -1,6 +1,6 @@
 # XQJ - Fort Ancient
 
-government = tribal_kingdom 
+government = tribal add_government_reform = tribal_kingdom 
 government_rank = 1
 primary_culture = shawnee
 religion = exptribes_high_totemism

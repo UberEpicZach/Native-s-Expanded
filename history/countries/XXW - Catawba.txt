@@ -1,6 +1,6 @@
 # XXW - Catawba
 
-government = native_council government_rank = 1
+government = native government_rank = 1
 primary_culture = catawba
 religion = totemism
 technology_group = north_american

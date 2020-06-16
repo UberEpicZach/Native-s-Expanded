@@ -1,4 +1,4 @@
-government = native_council
+government = native
 technology_group = south_american
 religion = exptribes_polynesian
 primary_culture = maori

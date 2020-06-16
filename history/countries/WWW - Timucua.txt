@@ -1,6 +1,6 @@
 # WWW - Timucua
 
-government = native_council
+government = native
 government_rank = 1
 primary_culture = timucua
 religion = totemism
